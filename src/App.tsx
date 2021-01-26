@@ -10,6 +10,9 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <p>
+          Here piece of piano app will be 
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
