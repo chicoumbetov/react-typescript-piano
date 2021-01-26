@@ -29,14 +29,15 @@ const White = styled.button`
 type Props = {
     color: string;
     note: string;
+    clickHandler: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const Note = ({ color, note }: Props) =>
+const Note = ({ color, note, clickHandler }: Props) =>
     color === 'white' ? (
-        <White value={note} />
+        <White value={note} onClick={clickHandler} />
 
     ) : (
-            <Black value={note} />
+            <Black value={note} onClick={clickHandler} />
         )
 
 export default Note;
